@@ -63,7 +63,8 @@ public class AppTest
     	when(mockSearch.returnAll()).thenReturn(fakeList);
     	
     	 HashMap<String, Float> result=util.countAverageScore(mockSearch);
-    	 assert(2==result.get("Messy"));
+    	 
+    	 assert(2==result.get("Messi"));
     	 assert(1.5==result.get("Ronaldo"));
     	 assert(2==result.get("Neymar"));
     	 verify(mockSearch).returnAll();
